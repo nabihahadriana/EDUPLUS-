@@ -1,0 +1,57 @@
+/* Global Styles */
+body {
+    background-color: #000000; /* Black background */
+    color: #fff;
+    font-family: 'Poppins', sans-serif;  /* Poppins font */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #800080; /* Purple navbar */
+    padding: 15px 0; /* Increase padding for larger navbar */
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Make logo and brand text larger */
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: auto;
+}
+
+.navbar-nav {
+    font-size: 1.2rem; /* Increase font size for navbar links */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Add some space between navbar items */
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* White color for navbar links */
+    padding: 10px 20px; /* Increase padding for better readability */
+    border-radius: 5px; /* Rounded corners for navbar items */
+    text-transform: uppercase; /* Make text uppercase */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #ff68b1; /* Pink on hover */
+    color: #fff;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* Change the toggler icon color to white */
+}
+
+/* Ensure the navbar collapses properly */
+.collapse.navbar-collapse {
+    justify-content: center; /* Center the navbar items */
+}

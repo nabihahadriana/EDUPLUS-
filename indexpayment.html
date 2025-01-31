@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shipping Information</title>
+    <link rel="stylesheet" href="payment.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .progress-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .step {
+            background-color: #4f2d56;
+            color: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        .line {
+            height: 4px;
+            width: 40px;
+            background-color: #ccc;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #4f2d56;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .row input {
+            width: 48%;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4f2d56;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #3e2042;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="back-btn"><i class="bx bx-arrow-back"></i></button>
+      <h1>Shipping Information</h1>
+      <h3>Step 1 of 3</h3>
+
+      <div class="progress-bar">
+        <div class="step"><i class="bx bxs-map"></i></div>
+        <div class="line"></div>
+        <div class="step active"><i class="bx bxs-credit-card"></i></div>
+        <div class="line"></div>
+        <div class="step"><i class="bx bxs-truck"></i></div>
+      </div>
+      
+      <form>
+          <div class="row">
+              <div class="form-group">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" name="last-name" required>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="row">
+              <div class="form-group">
+                  <label for="city">City</label>
+                  <input type="text" id="city" name="city" required>
+              </div>
+              <div class="form-group">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" required>
+              </div>
+          <div class="buttons">
+            <a href="payment.html" class="btn">NEXT</a>
+         </div>
+      </form>
+    </div>
+  </body>
+</html>

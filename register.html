@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+  </head>
+  <body>
+    <!-- Background Section -->
+    <div class="background">
+      <img src="sign up.png" alt="Sign Up" class="background-image" />
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        font-weight: bold; /* Make all text bold */
+      }
+
+      /* Background Section */
+      .background {
+        position: fixed; /* Fix the background to fill the viewport */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Place the background behind everything */
+      }
+
+      .background-image {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Content Section */
+      .content {
+        position: relative; /* Ensure content is layered above the background */
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      /* Logo Section */
+      .logo-container {
+        text-align: left;
+      }
+
+      .logo {
+        width: auto;
+        height: auto;
+        border-radius: 100px;
+        margin-left: 150px;
+      }
+
+      /* Registration Form Section */
+      .container {
+        background: #f4f4f4;
+        padding: 30px 40px;
+        border-radius: 15px;
+        box-shadow: 0px 8px 15px #301934;
+        text-align: left;
+        width: 600px;
+        margin-bottom: 30px;
+        margin-left: 80px;
+      }
+
+      h1 {
+        font-size: 18px;
+        padding: 18px;
+        color: #fff;
+        background-color: #643c80;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+      }
+
+      h2 {
+        font-size: 18px;
+        color: #4a2f59;
+        margin: 15px 0 20px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+      }
+
+      .form-row {
+        display: flex;
+        gap: 15px;
+      }
+
+      .form-row .form-group {
+        flex: 1;
+      }
+
+      label {
+        font-size: 14px;
+        color: #4a2f59;
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1.5px solid #7b5a99;
+        border-radius: 5px;
+        font-size: 14px;
+        outline: none;
+      }
+
+      input:focus {
+        border-color: #7b5a99;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #643c80;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      button:hover {
+        background-color: #643c80;
+      }
+
+      .login-text {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #4a2f59;
+      }
+
+      .login-link {
+        color: #00008b;
+        text-decoration: none;
+      }
+
+      .login-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <!-- Content Section -->
+    <div class="content">
+      <!-- Logo Section -->
+      <div class="logo-container">
+        <img src="logo.png" alt="EDU PLUS Logo" class="logo" />
+      </div>
+
+      <!-- Registration Form Section -->
+      <div class="container">
+        <div class="form-header">
+          <h1>FORM REGISTER</h1>
+          <br />
+        </div>
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" required />
+            </div>
+            <div class="form-group">
+              <label for="repeat-password">Repeat Password</label>
+              <input type="password" id="repeat-password" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <input type="text" id="gender" required />
+          </div>
+          <button type="submit">REGISTER NOW !</button><br />
+          <p class="login-text">
+            Already have an account ?
+            <a href="login1.html" class="login-link">Log In Here</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevents the form from refreshing the page
+
+          // Display success message
+          alert("Register Successful ! Please Continue with Log In");
+
+          // Redirect to login page
+          window.location.href = "login1.html";
+        });
+      });
+    </script>
+  </body>
+</html>
