@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 20px;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.method input {
+  display: none;
+}
+
+.method label {
+  font-size: 16px;
+  color: #6a1b9a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bank-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.bank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.bank:hover {
+  border-color: #6a1b9a;
+}
+
+.bank img {
+  max-height: 40px;
+  max-width: 100%;
+}
+
+/* Keep the border color persistent once selected */
+.bank input:checked + img {
+  border: 2px solid #6a1b9a; /* Set the border to purple when selected */
+  border-radius: 5px;
+}
+
+/* Keep the border color around the bank container */
+.bank input:checked + img {
+  border: 2px solid #6a1b9a;
+}
+
+/* Styling for submit button */
+.submit-button {
+  display: block;
+  width: 100%;
+  background-color: #6a1b9a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #5a127d;
+}

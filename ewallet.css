@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 20px;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.method input {
+  display: none;
+}
+
+.method label {
+  font-size: 16px;
+  color: #6a1b9a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ewallet-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+.ewallet-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 3px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  text-align: left;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.ewallet-option:hover {
+  border-color: #6a1b9a;
+}
+
+.ewallet-option input {
+  display: none;
+}
+
+.ewallet-option input:checked + img,
+.ewallet-option input:checked + span {
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+.ewallet-option input:checked + span {
+  border-left: 4px solid #6a1b9a;
+  padding-left: 8px;
+}
+
+/* Highlight entire box when selected */
+.ewallet-option input:checked ~ span,
+.ewallet-option input:checked ~ img {
+  color: #6a1b9a;
+  font-weight: bold;
+}
+
+.ewallet-option input:checked ~ .ewallet-option {
+  border-color: #6a1b9a !important;
+  background-color: #f4e3ff;
+}
+
+.ewallet-option label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.ewallet-option img {
+  height: 40px;
+  width: auto;
+}
+
+.ewallet-option span {
+  font-size: 14px;
+  color: #333;
+  flex: 1;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  background-color: #6a1b9a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #5a127d;
+}

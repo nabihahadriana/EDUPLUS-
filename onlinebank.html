@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Banking Payment</title>
+  <link rel="stylesheet" href="online.css">
+  <style>
+    .container {
+      text-align: center;
+      max-width: 500px;
+      margin: auto;
+    }
+    
+    .bank-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .bank label {
+      display: block;
+      cursor: pointer;
+      border: 2px solid transparent;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .bank input {
+      display: none; /* Hide radio buttons */
+    }
+
+    .bank img {
+      width: 80px;
+      height: auto;
+    }
+
+    /* Highlight selected bank */
+    .bank input:checked + img {
+      border: 2px solid blue;
+      border-radius: 5px;
+    }
+
+    .submit-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Payment Methods</h2>
+    <div class="method">
+      <input type="radio" id="online-banking" name="payment-method" checked>
+      <label for="online-banking">
+        <span>Online Banking</span>
+      </label>
+    </div>
+    
+    <div class="bank-options">
+      <div class="bank">
+        <label for="fpx">
+          <input type="radio" id="fpx" name="bank" value="FPX">
+          <img src="fpx.png" alt="FPX">
+        </label>
+      </div>
+      <div class="bank">
+        <label for="bank-islam">
+          <input type="radio" id="bank-islam" name="bank" value="Bank Islam">
+          <img src="bank-islam.png" alt="Bank Islam">
+        </label>
+      </div>
+      <div class="bank">
+        <label for="rhb">
+          <input type="radio" id="rhb" name="bank" value="RHB">
+          <img src="rhb.png" alt="RHB">
+        </label>
+      </div>
+      <div class="bank">
+        <label for="ambank">
+          <input type="radio" id="ambank" name="bank" value="AmBank">
+          <img src="ambank.png" alt="AmBank">
+        </label>
+      </div>
+      <div class="bank">
+        <label for="alliance-bank">
+          <input type="radio" id="alliance-bank" name="bank" value="Alliance Bank">
+          <img src="alliance-bank.png" alt="Alliance Bank">
+        </label>
+      </div>
+      <div class="bank">
+        <label for="bank-rakyat">
+          <input type="radio" id="bank-rakyat" name="bank" value="Bank Rakyat">
+          <img src="bank-rakyat.png" alt="Bank Rakyat">
+        </label>
+      </div>
+      <div class="bank">
+        <label for="cimb">
+          <input type="radio" id="cimb" name="bank" value="CIMB">
+          <img src="cimb.png" alt="CIMB">
+        </label>
+      </div>
+      <div class="bank">
+        <label for="bank-muamalat">
+          <input type="radio" id="bank-muamalat" name="bank" value="Bank Muamalat">
+          <img src="bank-muamalat.png" alt="Bank Muamalat">
+        </label>
+      </div>
+      <div class="bank">
+        <label for="uob">
+          <input type="radio" id="uob" name="bank" value="UOB">
+          <img src="uob.png" alt="UOB">
+        </label>
+      </div>
+      <div class="bank">
+        <label for="hsbc">
+          <input type="radio" id="hsbc" name="bank" value="HSBC">
+          <img src="hsbc.png" alt="HSBC">
+        </label>
+      </div>
+      <div class="bank">
+        <label for="ocbc">
+          <input type="radio" id="ocbc" name="bank" value="OCBC">
+          <img src="ocbc.png" alt="OCBC Bank">
+        </label>
+      </div>
+      <div class="bank">
+        <label for="public-bank">
+          <input type="radio" id="public-bank" name="bank" value="Public Bank">
+          <img src="public-bank.png" alt="Public Bank">
+        </label>
+      </div>
+      <div class="bank">
+        <label for="maybank">
+          <input type="radio" id="maybank" name="bank" value="Maybank">
+          <img src="maybank.png" alt="Maybank">
+        </label>
+      </div>
+      <div class="bank">
+        <label for="bsn">
+          <input type="radio" id="bsn" name="bank" value="BSN">
+          <img src="bsn.png" alt="BSN">
+        </label>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-button">Submit</button>
+  </div>
+</body>
+</html>

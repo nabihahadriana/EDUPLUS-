@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eWallet Payment</title>
+  <link rel="stylesheet" href="ewallet.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Payment Methods</h2>
+    <div class="method">
+      <input type="radio" id="ewallet" name="payment-method" checked>
+      <label for="ewallet"></label>
+    </div>
+
+    <div class="ewallet-options">
+
+      <label class="ewallet-option">
+        <input type="radio" id="touch-n-go" name="ewallet" value="Touch 'n Go E-Wallet">
+        <img src="touch-n-go.png" alt="Touch 'n Go E-Wallet">
+        <span>Touch `n Go E-Wallet</span>
+      </label>
+
+      <label class="ewallet-option">
+        <input type="radio" id="grabpay" name="ewallet" value="Grab Pay">
+        <img src="grabpay.png" alt="Grab Pay">
+        <span>Grab Pay</span>
+      </label>
+
+      <label class="ewallet-option">
+        <input type="radio" id="shopeepay" name="ewallet" value="ShopeePay">
+        <img src="shopeepay.png" alt="ShopeePay">
+        <span>ShopeePay</span>
+      </label>
+
+      <label class="ewallet-option">
+        <input type="radio" id="boost" name="ewallet" value="Boost">
+        <img src="boost.png" alt="Boost">
+        <span>Boost</span>
+      </label>
+
+      <label class="ewallet-option">
+        <input type="radio" id="mae" name="ewallet" value="MAE by Maybank2u">
+        <img src="maybank.png" alt="MAE by Maybank2u">
+        <span>MAE by Maybank2u</span>
+        </label>
+      </lable>
+
+      <label class="ewallet-option">
+        <input type="radio" id="duitnow" name="ewallet" value="DuitNow">
+        <img src="duitnow.png" alt="DuitNow">
+        <span>DuitNow</span>
+      </label>
+      
+    </div>
+
+    <button type="submit" class="submit-button">Submit</button>
+  </div>
+</body>
+</html>
